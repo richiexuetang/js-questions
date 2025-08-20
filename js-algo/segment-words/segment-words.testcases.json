@@ -1,0 +1,23 @@
+[
+    {
+        "input": [
+            "abcd",
+            [
+                "a",
+                "abc",
+                "b",
+                "cd"
+            ]
+        ],
+        "output": true
+    },
+    {
+        "input": [
+            "a",
+            [
+                "b"
+            ]
+        ],
+        "output": false
+    }
+]
