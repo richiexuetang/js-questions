@@ -1,11 +1,8 @@
 body {
-    display: flex;
-    flex-direction: column;
     font-family: sans-serif;
     font-size: 12px;
     font-weight: bold;
     margin: 0;
-    min-height: 100vh;
 }
 
 * {
@@ -18,37 +15,24 @@ main,
 aside,
 footer {
     padding: 12px;
-    text-align: center;
 }
 
 header {
     background-color: tomato;
-    height: 60px;
-}
-
-.columns {
-    display: flex;
-    flex-grow: 1;
 }
 
 nav {
     background-color: coral;
-    flex-shrink: 0;
-    width: 100px;
 }
 
 main {
     background-color: moccasin;
-    flex-grow: 1;
 }
 
 aside {
     background-color: sandybrown;
-    flex-shrink: 0;
-    width: 100px;
 }
 
 footer {
     background-color: slategray;
-    height: 100px;
 }
