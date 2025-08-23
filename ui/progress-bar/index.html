@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-      <style>
-        /* Style goes here */
-      </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div>
-      Template for Pragmatic Section
+    <div class="wrapper">
+      <div id="progress-0" class="progress"></div>
+      <label>
+        <div>Control progress</div>
+        <input type="range" min="0" max="100" value="50" id="slider" />
+      </label>
+      <div id="progress-slider" class="progress"></div>
     </div>
     <script src="src/index.js"></script>
   </body>
