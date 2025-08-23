@@ -1,0 +1,15 @@
+name: Jest
+run-name: ${{ github.actor }} is testing
+on: [push]
+jobs:
+  run-defined-frontend-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "21"
+      - run: npm run test
