@@ -2,9 +2,9 @@
   "name": "js-practice",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
+    "generate": "node ./scripts/generateJs.js",
     "coverage": "jest --coverage"
   },
   "repository": {
