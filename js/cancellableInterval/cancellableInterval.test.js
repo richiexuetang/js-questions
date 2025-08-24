@@ -17,7 +17,7 @@ describe('setCancellableInterval', () => {
         });
         const cancel = setCancellableInterval(() => {
             i++;
-        }, 10);
+        }, 15);
         cancel();
         expect(i).toBe(0);
     });

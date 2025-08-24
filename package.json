@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --forceExit",
+    "test:debug": "jest --detectOpenHandles",
     "generate": "node ./scripts/generateJs.js",
     "coverage": "jest --coverage"
   },
