@@ -1,4 +1,4 @@
-const mean = require('./solution');
+const mean = require('./mean');
 
 describe('mean', () => {
     test('empty input array', () => {

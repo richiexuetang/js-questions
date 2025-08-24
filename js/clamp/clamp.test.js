@@ -1,4 +1,4 @@
-const clamp = require('./solution');
+const clamp = require('./clamp');
 
 describe('clamp', () => {
     test('negative numbers', () => {

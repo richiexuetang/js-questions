@@ -1,4 +1,4 @@
-const makeCounter = require("./solution");
+const makeCounter = require("./makeCounter");
 
 describe('makeCounter', () => {
     test('returns a function', () => {

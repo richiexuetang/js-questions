@@ -1,4 +1,4 @@
-const functionLength = require('./solution');
+const functionLength = require('./functionLength');
 
 describe('functionLength', () => {
     test('no arguments', () => {

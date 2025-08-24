@@ -1,4 +1,4 @@
-const numOfArgs = require('./solution');
+const numOfArgs = require('./numOfArgs');
 
 describe('numberOfArguments', () => {
     test('no arguments', () => {

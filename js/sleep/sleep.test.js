@@ -1,4 +1,4 @@
-const sleep = require('./solution');
+const sleep = require('./sleep');
 
 describe('sleep', () => {
     test('returns a promise', () => {
