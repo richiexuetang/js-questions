@@ -47,19 +47,23 @@ ${name}.
  * Main entry point for ${name}
  */
 
-console.log('Hello from ${name}!');
+module.exports = function ${name}() {
+}
 
 // Add your code here
 function main() {
   console.log('${name} is running...');
 }
+`;
 
-// Run main function if this file is executed directly
-if (require.main === module) {
-  main();
-}
+    // Create JavaScript file content
+    const testContent = `const ${name} = require('./${name}');
 
-module.exports = { main };
+    describe('${name} tests', () => {
+        test('should run without errors', () => {
+            expect('${name}').toEqual('${name}');
+        });
+    });
 `;
 
     // Write README.md
@@ -72,13 +76,10 @@ module.exports = { main };
     const testPath = path.join(folderPath, `${name}.test.js`);
 
     fs.writeFileSync(jsPath, jsContent);
-    fs.writeFileSync(testPath, jsContent);
+    fs.writeFileSync(testPath, testContent);
     console.log(`🚀 Created: ${name}/${name}.js`);
 
-    console.log('\n✅ Project structure created successfully!');
-    console.log(`\nNext steps:`);
-    console.log(`  cd ${name}`);
-    console.log(`  node ${name}.js`);
+    console.log('\n✅ Js function created successfully!');
 
 } catch (error) {
     console.error('❌ Error creating project structure:', error.message);
