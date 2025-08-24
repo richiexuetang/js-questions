@@ -34,10 +34,16 @@ try {
     // Create README.md content
     const readmeContent = `# ${name}
 
-## Usage
-${name}.
+## Arguments
+
+
+## Returns
+
 
 ## Examples
+
+compact([0, 1, false, 2, '', 3, null]); // => [1, 2, 3]
+compact(['hello', 123, [], {}]); // => ['hello', 123, [], {}]
 
 `;
 
