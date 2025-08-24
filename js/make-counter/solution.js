@@ -2,7 +2,7 @@
  * @param {number} initialValue
  * @return {Function}
  */
-module.exports = function makeCounter(initialValue) {
+module.exports = function makeCounter(initialValue = 0) {
     let count = initialValue - 1;
 
     return () => {
